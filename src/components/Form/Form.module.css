@@ -1,0 +1,80 @@
+section {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1.5rem;
+}
+
+.form_box {
+  display: flex;
+  flex-direction: column;
+  height: 20%;
+  width: 60%;
+  margin-top: 1.7rem;
+}
+
+.form_box p {
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.form_box select {
+  background-color: #262626;
+  padding: 5px;
+  font-weight: 500;
+  border: 1px solid #3C3B3B;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+}
+
+select:hover {
+  background-color: #3C3B3B;
+}
+
+.img {
+  width: 80px;
+  height: 88px;
+  border-radius: 5px;
+  margin: 2rem;
+  margin-left: 2.5rem;
+}
+
+
+@media(max-width: 768px) {
+  .img {
+    width: 70px;
+    height: 78px;
+  }
+
+  .form_box {
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    width: 160px;
+    margin-top: 1.7rem;
+  }
+
+  .form_box p {
+    font-size: 0.9rem;
+  }
+
+  .form_box select {
+    background-color: #262626;
+    padding: 2px;
+    font-weight: 500;
+    border: 1px solid #3C3B3B;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  section:last-child {
+    margin-bottom: 40px;
+  }
+}
